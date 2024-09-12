@@ -14,7 +14,13 @@ function App() {
 
   return (
     <>
-
+    <div className='intro'>
+      <p>
+      La biodiversidad se refiere a la variedad de formas de vida en la Tierra, incluyendo la diversidad de especies.
+      Se considera fundamental para el equilibrio de los ecosistemas, ya que cada especie desempeña un papel específico en su hábitat.
+      La biodiversidad contribuye a la estabilidad de los ecosistemas, a la provisión de recursos y a los servicios ambientales que sustentan la vida en el planeta.
+      </p>
+    </div>
     <div className='background'>
       <Canvas className='forest' camera={ {position: [0, 3, 6], fov:50 }}>
         <ambientLight />

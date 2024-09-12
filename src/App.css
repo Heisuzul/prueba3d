@@ -18,3 +18,30 @@ body, html {
   background-size: cover; /* Cubre todo el fondo */
   background-position: center; /* Centra la imagen */
 }
+
+.intro {
+  position: absolute; /* Posicionamiento absoluto */
+  top: 40%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajustar el centro del contenedor */
+  z-index: 1; /* Asegurarse de que esté por encima del canvas */
+  pointer-events: none; /* Permitir interacciones con el canvas debajo */
+}
+
+@keyframes desvanecer {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+.intro p {
+  font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+  font-size: 20px; /* Tamaño del texto */
+  text-align: center; /* Centrar el texto */
+  color: white;
+  animation: desvanecer 4s forwards; /* Duración de la animación: 4 segundos */
+  animation-delay: 6s; /* Esperar 3 segundos antes de comenzar a desvanecer */
+}
