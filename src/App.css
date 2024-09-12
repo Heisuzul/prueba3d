@@ -1,0 +1,20 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegúrate de que el body y html ocupen el 100% de la altura */
+  overflow: hidden; /* Evita el desplazamiento */
+  background-color: #446d37;
+}
+
+.forest {
+  height: 170vh !important;
+  display: block;
+  position: relative;
+  bottom: 50px;
+}
+
+.background {
+  background-image: url('./assets/background.jpg'); /* Cambia la ruta según sea necesario */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+}
