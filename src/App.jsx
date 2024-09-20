@@ -6,6 +6,9 @@ import {Canvas} from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 import Forest from '../public/forest/Forest.jsx'
 import Bee from '../public/bee/Bee.jsx'
+import Navbar from './components/navbar/navbar.jsx'
+import bee from './assets/bee_low_poly.png'
+import textballoon from './assets/textballoon.png'
 
 
 
@@ -14,6 +17,11 @@ function App() {
 
   return (
     <>
+    <Navbar />
+    
+    <img className='bee-img' src={bee} alt="Bee img" />
+    
+    <img className='text-img' src={textballoon} alt="Text img" />
     <div className='intro'>
       <p>
       La biodiversidad se refiere a la variedad de formas de vida en la Tierra, incluyendo la diversidad de especies.
