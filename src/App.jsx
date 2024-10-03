@@ -18,10 +18,7 @@ function App() {
   return (
     <>
     <Navbar />
-    
-    <img className='bee-img' src={bee} alt="Bee img" />
-    
-    <img className='text-img' src={textballoon} alt="Text img" />
+
     <div className='intro'>
       <p>
       La biodiversidad se refiere a la variedad de formas de vida en la Tierra, incluyendo la diversidad de especies.
